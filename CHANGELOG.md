@@ -1,3 +1,7 @@
+# 0.4.1 / 2016-10-24
+
+* Fix build to include `src`
+
 # 0.4.0 / 2016-10-24
 
 * Initial `Dev Server` release
