@@ -1,0 +1,8 @@
+*.log
+.DS_Store
+node_modules/
+socket-test/*
+language
+credentials.env
+initai-cli-*.tgz
+initai-*.tgz
