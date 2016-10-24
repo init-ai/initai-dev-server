@@ -1,3 +1,7 @@
+# 0.4.3 / 2016-10-24
+
+* Export executable file from `bin`
+
 # 0.4.2 / 2016-10-24
 
 * Fix build to include `index.js`

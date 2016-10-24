@@ -1,8 +1,11 @@
 {
   "name": "initai-dev-server",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "A training server and toolkit for developing Projects on the Init.ai platform.",
-  "main": "index.js",
+  "main": "./bin/initai-dev-server.js",
+  "bin": {
+    "initai-dev-server": "./bin/initai-dev-server.js"
+  },
   "scripts": {
     "lint": "eslint . --ignore-pattern '/test' --ignore-pattern '/node_modules' -c .eslintrc --fix",
     "test": "npm run lint && NODE_ENV=test mocha ./test --recursive",
