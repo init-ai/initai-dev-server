@@ -1,3 +1,7 @@
+# 0.4.2 / 2016-10-24
+
+* Fix build to include `index.js`
+
 # 0.4.1 / 2016-10-24
 
 * Fix build to include `src`
