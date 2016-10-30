@@ -1,5 +1,5 @@
 const logger = require('../../src/util/logger')
-const chalk
+const chalk = require('chalk')
 
 describe('logger', function () {
   beforeEach(function () {

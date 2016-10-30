@@ -2,6 +2,7 @@
 
 const restify = require('restify')
 const socketio = require('socket.io')
+const chalk = require('chalk')
 
 const constants = require('./util/constants')
 const logger = require('./util/logger')
@@ -102,6 +103,20 @@ class Server {
   startHTTPServer() {
     this.httpServer.listen(port, () => {
       logger.log(`${this.httpServer.name} running at ${this.httpServer.url}`)
+    })
+
+    this.httpServer.once('error', (error) => {
+      if (error.code === 'EADDRINUSE') {
+        logger.logClean('\n')
+        logger.logClean(chalk.red('-----------------------------------------------------------'))
+        logger.logClean(chalk.red.bold(`ERROR: Port ${8443} is in use`))
+        logger.logClean('\n')
+        logger.logClean(`Another Init.ai dev server may be running.\nTry stopping it and then restart this instance.`)
+        logger.logClean('\n')
+        logger.logClean('See docs:', chalk.blue.underline('http://docs.init.ai/reference/dev-server.html'))
+        logger.logClean(chalk.red('-----------------------------------------------------------'))
+        logger.logClean('\n')
+      }
     })
   }
 }

@@ -1,3 +1,9 @@
+# 0.4.4 / 2016-08-29
+
+* Provide error message when port 8443 is in use
+* Support NPM3 node_modules path for SSL config
+* Fix a weird const in the tests
+
 # 0.4.3 / 2016-10-24
 
 * Export executable file from `bin`
