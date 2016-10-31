@@ -1,4 +1,8 @@
-# 0.4.4 / 2016-08-29
+# 0.4.5 / 2016-10-31
+
+* Use `GOARCH` instead of `GO_ARCH` to build 32-bit binaries.
+
+# 0.4.4 / 2016-10-29
 
 * Provide error message when port 8443 is in use
 * Support NPM3 node_modules path for SSL config

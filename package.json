@@ -1,6 +1,6 @@
 {
   "name": "initai-dev-server",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "A training server and toolkit for developing Projects on the Init.ai platform.",
   "main": "./bin/initai-dev-server.js",
   "bin": {
