@@ -13,7 +13,7 @@ if (nodeVersion !== '4.3.2') {
   logger.logClean(chalk.yellow.bold('WARNING!'), 'You are not using Node.js version', chalk.blue.bold('4.3.2'))
   logger.logClean(chalk.gray('\nCurrent detected version:'), chalk.yellow.bold(`${nodeVersion}`))
   logger.logClean('\n')
-  logger.logClean('See docs:', chalk.blue.underline('http://docs.init.ai/reference/dev-server.html'))
+  logger.logClean('See docs:', chalk.blue.underline('https://docs.init.ai/docs/dev-server'))
   logger.logClean(chalk.yellow('-----------------------------------------------------------'))
   logger.logClean('\n')
 }

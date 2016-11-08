@@ -113,7 +113,7 @@ class Server {
         logger.logClean('\n')
         logger.logClean(`Another Init.ai dev server may be running.\nTry stopping it and then restart this instance.`)
         logger.logClean('\n')
-        logger.logClean('See docs:', chalk.blue.underline('http://docs.init.ai/reference/dev-server.html'))
+        logger.logClean('See docs:', chalk.blue.underline('https://docs.init.ai/docs/dev-server'))
         logger.logClean(chalk.red('-----------------------------------------------------------'))
         logger.logClean('\n')
       }

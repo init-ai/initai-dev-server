@@ -1,3 +1,7 @@
+# 0.4.6 / 2016-11-07
+
+* Update docs URLs to point to new docs application
+
 # 0.4.5 / 2016-10-31
 
 * Use `GOARCH` instead of `GO_ARCH` to build 32-bit binaries.
