@@ -27,7 +27,7 @@ class Server {
     const server = restify.createServer(Object.assign(
       {},
       getSSLConfig(),
-      {name: 'Init.ai Training Server'}
+      {name: 'Init.ai Dev Server'}
     ))
 
     server.use(restify.CORS({
@@ -102,7 +102,13 @@ class Server {
 
   startHTTPServer() {
     this.httpServer.listen(port, () => {
-      logger.log(`${this.httpServer.name} running at ${this.httpServer.url}`)
+      logger.log(`${this.httpServer.name} is running. Hop back to the console to use the Training Interface.`)
+      logger.logClean('\n')
+      logger.logClean('-----------------------------------------------------------')
+      logger.logClean('See docs for using the Local Bridge:')
+      logger.logClean(chalk.blue.underline('https://docs.init.ai/docs/dev-server#section-local-bridge'))
+      logger.logClean('-----------------------------------------------------------')
+      logger.logClean('\n')
     })
 
     this.httpServer.once('error', (error) => {

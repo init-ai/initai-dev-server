@@ -62,7 +62,7 @@ describe('Server', () => {
       expect(restify.createServer).to.have.been.calledWith({
         certificate: sinon.match.string,
         key: sinon.match.string,
-        name: 'Init.ai Training Server',
+        name: 'Init.ai Dev Server',
       })
     })
 

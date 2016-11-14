@@ -1,3 +1,7 @@
+# 0.4.7 / 2016-11-14
+
+* Remove server address from startup message
+
 # 0.4.6 / 2016-11-07
 
 * Update docs URLs to point to new docs application
