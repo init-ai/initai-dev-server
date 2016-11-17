@@ -68,7 +68,9 @@ class LocalExecutionTester {
         throw new Error(body)
       }
 
-      this.connectToPusher(JSON.parse(body).body.destination_id)
+      if (this.pusher && this.pusher.subscribe) {
+        this.connectToPusher(JSON.parse(body).body.destination_id)
+      }
     })
   }
 
@@ -213,8 +215,10 @@ class LocalExecutionTester {
   }
 
   destroy() {
-    this.pusher.disconnect()
-    this.pusher = null
+    if (this.pusher) {
+      this.pusher.disconnect()
+      this.pusher = null
+    }
   }
 }
 

@@ -1,3 +1,8 @@
+# 0.4.8 / 2016-11-16
+
+* Add `codeVersion` to Rollbar alerts
+* Guard against missing `pusher` reference after destroy
+
 # 0.4.7 / 2016-11-14
 
 * Remove server address from startup message
