@@ -1,3 +1,7 @@
+# 0.4.9 / 2017-04-26
+
+* Add deprecation warning
+
 # 0.4.8 / 2016-11-16
 
 * Add `codeVersion` to Rollbar alerts
