@@ -1,3 +1,5 @@
+# _(NOTICE):_ This library has been deprecated and is no longer required for the [Init.ai](https://init.ai) platform. Visit [https://init.ai](https://init.ai) for more.
+
 # Init.ai Dev Server
 
 A training server and toolkit for developing Projects on the [init.ai](https://init.ai) platform.
